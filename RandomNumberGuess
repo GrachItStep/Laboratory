@@ -1,0 +1,12 @@
+#ця частина коду була зробленна Макаром Грачем
+import random
+randomNumber = random.randint(1, 10)
+for i in range(1000):
+    answer = int(input("Type your guess: "))
+    if answer == randomNumber:
+        break
+    elif answer >= randomNumber:
+        print("Lower")
+    elif answer <= randomNumber:
+        print("Larger")
+print("You guessed right!")
