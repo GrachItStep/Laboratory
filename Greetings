@@ -1,4 +1,3 @@
-#ця частина коду була зробленна Макаром Грачем
 name = input("Input your name: ")
 age = input("Input your age: ")
 print("Hello, " + name + ", you're " + age + " year old!")
