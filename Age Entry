@@ -1,4 +1,3 @@
-#ця частина коду була зробленна Макаром Грачем
 age = int(input("Input your age: "))
 if age >= 18:
   print("Entry is allowed!")
