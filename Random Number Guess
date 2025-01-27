@@ -1,4 +1,3 @@
-#ця частина коду була зробленна Макаром Грачем
 import random
 randomNumber = random.randint(1, 10)
 for i in range(1000):
