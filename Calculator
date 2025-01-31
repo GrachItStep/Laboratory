@@ -1,0 +1,18 @@
+number1 = int(input("Input first number: "))
+sign = input("Input sign: ")
+number2 = int(input("Input second number: "))
+if sign == "+":
+    result = number1 + number2
+    print(f"Result is {result}")
+elif sign == "-":
+    result = number1 - number2
+    print(f"Result is {result}")
+elif sign == "*":
+    result = number1 * number2
+    print(f"Result is {result}")
+elif sign == "/":
+    if number2  != 0:
+        result = number1 / number2
+        print(f"Result is {result}")
+    else:
+        print("It is impossible to solve.")
