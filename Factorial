@@ -1,0 +1,10 @@
+number = int(input("Input a number, to find his factorial: "))
+multiplier = 1
+result = 1
+print("-------------------------")
+for i in range(1, number):
+    multiplier = multiplier + 1
+    result = result * multiplier
+    print(result)
+print("-------------------------")
+print(f"Factorial of number {number} is {result}.")
