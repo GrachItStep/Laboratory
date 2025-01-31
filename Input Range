@@ -1,0 +1,5 @@
+firstRangeNumber = int(input("Input first range number: "))
+secondRangeNumber = int(input("Input second range number: "))
+print("---------------------------------")
+for i in range(firstRangeNumber, secondRangeNumber + 1):
+    print(i)
