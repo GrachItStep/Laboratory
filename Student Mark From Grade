@@ -1,0 +1,18 @@
+grade = int(input("Input student grade: "))
+if grade >= 0 and grade <= 29:
+    mark = "F"
+    print(mark)
+elif grade >= 30 and grade <= 49:
+    mark = "D"
+    print(mark)
+elif grade >= 50 and grade <= 69:
+    mark = "C"
+    print(mark)
+elif grade >= 70 and grade <= 89:
+    mark = "B"
+    print(mark)
+elif grade >= 90 and grade <= 100:
+    mark = "A"
+    print(mark)
+else:
+    print("Error. Invalid grade.")
