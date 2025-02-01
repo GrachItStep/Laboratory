@@ -1,0 +1,22 @@
+class Human:
+    def __init__(self, name="Human"):
+        self.name = name
+class Car:
+    def __init__(self, carBrand):
+        self.carBrand = carBrand
+        self.passengers = []
+    def add_passenger(self, *args):
+        for passenger in args:
+            self.passengers.append(passenger)
+    def print_passengers_names(self):
+        if self.passengers != []:
+            print(f"Names of {self.carBrand} passengers: ")
+            for passenger in self.passengers:
+                print(passenger.name)
+        else:
+            print(f"There are no passengets in {self.brand}.")
+bob = Human("Bob")
+layla = Human("Layla")
+car = Car("Toyota")
+car.add_passenger(bob, layla)
+car.print_passengers_names()
