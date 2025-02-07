@@ -1,0 +1,33 @@
+import random
+
+class Encryptor:
+    def __init__(self, *numbers):
+        self.numbers = numbers
+        self.result = self.process_numbers()
+    
+    def process_numbers(self):
+        operations = [self.add, self.subtract, self.multiply, self.divide]
+        result = self.numbers[0]
+        for number in self.numbers[1:]:
+            operation = random.choice(operations)
+            result = operation(result, number)
+        return result
+
+    def add(self, a, b):
+        return a + b
+
+    def subtract(self, a, b):
+        return a - b
+
+    def multiply(self, a, b):
+        return a * b
+
+    def divide(self, a, b):
+        return a / b if b != 0 else 1  # уникнення ділення на нуль
+
+    def __str__(self):
+        return f"Result of the calculations: {self.result}"
+
+# Приклад використання
+enc = Encryptor(5, 3, 8)
+print(enc)
