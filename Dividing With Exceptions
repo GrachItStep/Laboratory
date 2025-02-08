@@ -1,0 +1,9 @@
+try:
+    numerator = int(input("Введіть чисельник: "))
+    denominator = int(input("Введіть  знаменник: "))
+    result = numerator / denominator
+    print("Результат:", result)
+except ZeroDivisionError:
+    print("Помилка: Ділення на нуль неможливе.")
+except ValueError:
+    print("Помилка: Введені дані не є числом.")
