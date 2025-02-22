@@ -1,0 +1,16 @@
+import time
+
+def time_function(func, *args):
+    start = time.time()
+    result = func(*args)
+    end = time.time()
+    return result, end - start
+
+def example_function(seconds):
+    print("Функція виповняється...")
+    time.sleep(seconds)
+    return f"Затримка {seconds} секунд."
+
+result, execution_time = time_function(example_function, 5)
+print(f"Результат: {result}.")
+print(f"Час виконання: {execution_time} секунд.")
