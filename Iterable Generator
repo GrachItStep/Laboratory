@@ -1,0 +1,14 @@
+def generator():
+    n = 1
+    while n <= 10:
+        yield n
+        n += 1
+
+class Iterable:
+    def __iter__(self):
+        return generator()
+
+iterable = Iterable()
+
+for number in iterable:
+    print(number)
