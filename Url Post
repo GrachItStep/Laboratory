@@ -1,0 +1,5 @@
+import requests
+response = requests.post("https://httpbin.org/post",
+data = "Testing post on your site!",
+headers = {"h1": "Hi!"})
+print(response.text)
